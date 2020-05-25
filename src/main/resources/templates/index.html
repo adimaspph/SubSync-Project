@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Subsync</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}" href="../static/bootstrap.css">
+    <link rel="stylesheet" th:href="@{/style.css}" href="../static/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>SubSync</h1>
+        <form action="#" th:action="@{/}" name="form" method="post" enctype="multipart/form-data">
+
+            <div class="custom-control custom-checkbox remove">
+                <input type="checkbox" class="custom-control-input" id="customCheck" name="removeEffect">
+                <label class="custom-control-label" for="customCheck">Remove Effect (TV)</label>
+            </div>
+
+            <div class="delay">
+                Delay       :
+                <select class="field-indicator" name="indicator" id="selection">
+                    <option value="+">Increase</option>
+                    <option value="-">Decrease</option>
+                </select>
+            </div>
+            <div class="time">
+                <label>Hours : Minute : Second : Milisecond</label>
+            </div>
+            <div class="time-set">
+                <input class="field" type="number" name="hour" min="0" max="24" placeholder="00" onkeydown="return (event.keyCode !== 69)">
+                <label> : </label>
+                <input class="field" type="number" name="minute" min="0" max="59" placeholder="00" onkeydown="return (event.keyCode !== 69)">
+                <label> : </label>
+                <input class="field" type="number" name="second" min="0" max="59" placeholder="00" onkeydown="return (event.keyCode !== 69)">
+                <label> : </label>
+                <input class="field-ms" type="number" name="miliSecond" min="0" max="999" placeholder="000" onkeydown="return (event.keyCode !== 69)">
+            </div>
+
+            <div class="container-file">
+                <input class="file" type="file" name="file" id="file" accept=".srt" required>
+<!--                <input type="file" class="custom-file-input" id="customFile" name="file" accept=".srt" required>-->
+<!--                <label class="custom-file-label file" for="customFile">Choose file</label>-->
+            </div>
+
+            <input class="sync" type="submit" value="Sync and Download">
+        </form>
+    </div>
+</body>
+</html>

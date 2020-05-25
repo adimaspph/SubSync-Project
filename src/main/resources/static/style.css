@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 36px;
+    color: rgba(49, 69,106,1);
+}
+
+.content{
+    width: 500px;
+    padding: 40px 30px;
+    background: #e3edf7;
+    box-shadow: -6px -6px 10px -1px #ffffff73,
+                6px 6px 10px -1px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    border: 1px solid #00000000;
+}
+
+.content label{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    color: rgba(49, 69,106,1);
+}
+
+.content .field{
+    height: 35px;
+    width: 60px;
+
+    padding-top: 1px;
+    padding-left: 20px;
+    font-size: 18px;
+    border-radius: 25px;
+
+    outline: none;
+    border: none;
+    background: #e3edf7;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+
+.content .field-ms{
+    height: 35px;
+    width: 65px;
+
+    padding-top: 1px;
+    padding-left: 19px;
+    font-size: 18px;
+    border-radius: 25px;
+
+    outline: none;
+    border: none;
+    background: #e3edf7;
+    box-shadow: inset 2px 2px 5px #babecc,
+    inset -5px -5px 10px #ffffff73;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.content .field-indicator{
+    height: 25px;
+    width: 100px;
+
+    padding-top: 1px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: rgba(49, 69,106,1);
+    border-radius: 25px;
+
+    outline: none;
+    border: none;
+    background: #e3edf7;
+    box-shadow:  2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
+}
+
+.content .field-indicator:hover{
+    background: #2d2d2d05;
+}
+
+.content .field-indicator:active{
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+
+.delay, .remove{
+    padding-left: 70px;
+    text-align: left;
+    font-size: 20px;
+    color: rgba(49, 69,106,1);
+    font-weight: normal;
+    padding-bottom: 18px;
+}
+
+.remove{
+    padding-left: 95px;
+    text-align: left;
+
+}
+
+.time{
+    color: #595959;
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+.time-set, input[type=file]{
+    padding-bottom: 18px ;
+}
+
+.file{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+
+}
+
+.sync{
+    margin-top: 15px;
+    height: 45px;
+    width: 50%;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(49, 69,106,1);
+    border-radius: 25px;
+
+    outline: none;
+    border: none;
+    background: #e3edf7;
+    box-shadow:  2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
+}
+
+.sync:hover{
+    background: #2d2d2d05;
+}
+
+.sync:active{
+    box-shadow: inset 2px 2px 5px #babecc,
+    inset -5px -5px 10px #ffffff73;
+}
+
+
+
+/*============ Bootstrap ===================*/
+
+
+
+
+
+
+
+
